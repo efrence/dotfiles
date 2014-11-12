@@ -7,4 +7,8 @@ set ai
 filetype indent on
 let g:nerdtree_tabs_open_on_console_startup=1
 map <C-f> :NERDTreeFocus<CR>
+map <C-g> ,cc<CR>
 let mapleader = ","
+syntax enable
+set background=dark
+colorscheme solarized
