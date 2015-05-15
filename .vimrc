@@ -13,10 +13,16 @@ map <C-g> ,cc<CR>
 let mapleader = ","                                                                                 
 "Solorized theme                                                                                    
 syntax enable                                                                                       
-set background=dark                                                                                 
+set background=dark     
+let g:solarized_visibility = "high"                                                                                                   
+let g:solarized_contrast = "high"    
 colorscheme solarized                                                                               
 "to work with codebox and chrome                                                                    
 noremap <tab> <c-w><c-w>
 let g:multi_cursor_next_key='<C-m>'
 "fuzzy search https://github.com/kien/ctrlp.vim
 "multiple-cursors https://github.com/terryma/vim-multiple-cursors
+map  <C-l> :tabn<CR>                                                                                                                  
+map  <C-h> :tabp<CR>                                                                                                                  
+map  <C-n> :tabnew<CR>                                                                                                                
+let g:NERDTreeWinSize = 15
