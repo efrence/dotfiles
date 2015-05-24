@@ -26,3 +26,8 @@ map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>                                                                                                                  
 map  <C-n> :tabnew<CR>                                                                                                                
 let g:NERDTreeWinSize = 15
+set hlsearch   
+" vim-ruby-fold
+" toggle folding method with space key
+nnoremap <Space> za
+vnoremap <Space> za
