@@ -37,3 +37,7 @@ nnoremap <C-j> ddp
 " text bubling multiple lines
 vnoremap <C-k> xkP`[V`]
 vnoremap <C-j> xp`[V`]
+" map esc to jj in insert mode
+inoremap jj <Esc>
+" ignore esc in insert mode
+inoremap <Esc> <Nop>
