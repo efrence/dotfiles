@@ -31,3 +31,9 @@ set hlsearch
 " toggle folding method with space key
 nnoremap <Space> za
 vnoremap <Space> za
+" text bubling single lines
+nnoremap <C-k> ddkP
+nnoremap <C-j> ddp
+" text bubling multiple lines
+vnoremap <C-k> xkP`[V`]
+vnoremap <C-j> xp`[V`]
