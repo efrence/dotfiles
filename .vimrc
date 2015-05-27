@@ -4,14 +4,15 @@ set tabstop=2
 set shiftwidth=2                                                                                    
 set expandtab                                                                                       
 set ai                                                                                              
-filetype indent on                                                                                  
+filetype indent on  
+" https://github.com/scrooloose/nerdcommenter.git
 "Nerdtree and Nerdtree tabs https://github.com/scrooloose/nerdtree https://github.com/jistr/vim-nerdtree-tabs                                                                        
 let g:nerdtree_tabs_open_on_console_startup=1                                                       
 map <C-f> :NERDTreeFocus<CR>                                                                        
 "Nercommenter                                                                                       
 map <C-g> ,cc<CR>                                                                                   
 let mapleader = ","                                                                                 
-"Solorized theme                                                                                    
+"Solorized theme https://github.com/altercation/vim-colors-solarized.git                                                                               
 syntax enable                                                                                       
 set background=dark     
 let g:solarized_visibility = "high"                                                                                                   
