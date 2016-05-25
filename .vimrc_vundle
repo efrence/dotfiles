@@ -1,4 +1,10 @@
 set nocompatible
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set ai
+set backspace=indent,eol,start
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -7,30 +13,36 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'kien/ctrlp'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'bruno-/vim-ruby-fold'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-sensible'
-
-let g:nerdtree_tabs_open_on_console_startup=1                                                       
-map <C-f> :NERDTreeFocus<CR>                                                                        
-"Nercommenter                                                                                       
-map <C-g> ,cc<CR>                                                                                   
-let mapleader = ","                                                                                 
-syntax enable                                                                                       
-set background=dark     
-let g:solarized_visibility = "high"                                                                                                   
-let g:solarized_contrast = "high"    
-colorscheme solarized                                                                               
-"to work with codebox and chrome                                                                    
+filetype indent on
+let g:nerdtree_tabs_open_on_console_startup=1
+map <C-f> :NERDTreeFocus<CR>
+"Nercommenter
+map <C-g> ,cc<CR>
+let mapleader = ","
+syntax enable
+"set background=dark
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+"colorscheme solarized
+"to work with codebox and chrome
 noremap <tab> <c-w><c-w>
 let g:multi_cursor_next_key='<C-m>'
-map  <C-l> :tabn<CR>                                                                                                                  
-map  <C-h> :tabp<CR>                                                                                                                  
-map  <C-n> :tabnew<CR>                                                                                                                
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
 let g:NERDTreeWinSize = 15
-set hlsearch   
+set hlsearch
 " toggle folding method with space key
 nnoremap <Space> za
+" text bubling single lines
+nnoremap <C-k> ddkP
+nnoremap <C-j> ddp
+" text bubling multiple lines
+vnoremap <C-k> xkP`[V`]
+vnoremap <C-j> xp`[V`]
