@@ -9,7 +9,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'gmarik/vundle' 
+Plugin 'gmarik/vundle'
+Plugin 'mhinz/vim-grepper'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
