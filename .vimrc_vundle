@@ -61,4 +61,5 @@ nnoremap <C-j> ddp
 " text bubling multiple lines
 vnoremap <C-k> xkP`[V`]
 vnoremap <C-j> xp`[V`]
-
+" locate file
+map <S-r> :NERDTreeFind <CR>
