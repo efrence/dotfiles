@@ -27,6 +27,10 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mxw/vim-jsx'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'mileszs/ack.vim'
+Plugin 'PhilRunninger/nerdtree-buffer-ops'
+Plugin 'ngmy/vim-rubocop'
 call vundle#end()
 filetype plugin indent on
 " show existing tab with 2 spaces width
