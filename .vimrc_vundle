@@ -16,21 +16,25 @@ Plugin 'mhinz/vim-grepper'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bruno-/vim-ruby-fold'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
+"Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-sensible'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'mxw/vim-jsx'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'mxw/vim-jsx'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'mileszs/ack.vim'
-Plugin 'PhilRunninger/nerdtree-buffer-ops'
+"Plugin 'PhilRunninger/nerdtree-buffer-ops'
 Plugin 'ngmy/vim-rubocop'
+"Plugin 'leafOfTree/vim-vue-plugin'
+"Plugin 'storyn26383/vim-vue'
+Plugin 'isruslan/vim-es6'
+Plugin 'posva/vim-vue'
 call vundle#end()
 filetype plugin indent on
 " show existing tab with 2 spaces width
@@ -49,6 +53,8 @@ syntax enable
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 "colorscheme solarized
+set background=dark
+colorscheme solarized8_low
 "to work with codebox and chrome
 noremap <tab> <c-w><c-w>
 let g:multi_cursor_next_key='<C-m>'
@@ -67,3 +73,5 @@ vnoremap <C-k> xkP`[V`]
 vnoremap <C-j> xp`[V`]
 " locate file
 map <S-r> :NERDTreeFind <CR>
+"autocmd BufRead,BufNewFile *.vue setfiletype html
+
